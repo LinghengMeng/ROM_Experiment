@@ -7,6 +7,7 @@ Created on Tue Aug  7 18:30:12 2018
 """
 import tensorflow as tf
 import numpy as np
+import time
 
 from Environment.LASEnv import LASEnv
 from LASAgent.RandomLASAgent import RandomLASAgent
@@ -66,6 +67,9 @@ if __name__ == '__main__':
         while not done:
             # LAS interacts with environment.
             actionLAS = LASAgent1.perceive_and_act(observation_For_LAS, reward_for_LAS, done)
+            # delay the observing of consequence of LASAgent's action
+            observation_For_LAS, reward_for_LAS, done, info = envLAS.step(actionLAS)
+            print("LAS Step: {}, reward: {}".format(i, reward_for_LAS))
             
             # Visitor0 interacts with environment.
             visitorName0, action = visitor0.perceive_and_act(observation_For_Visitor0,reward_for_Visitor0,done)
@@ -87,9 +91,8 @@ if __name__ == '__main__':
             observation_For_Visitor3, reward_for_Visitor3, done, [] = envVisitor.step(visitorName3, action)
             print("Visitor Step: {}, Red light number: {}".format(i, visitor3.red_light_num))
             
-            # delay the observing of consequence of LASAgent's action
-            observation_For_LAS, reward_for_LAS, done, info = envLAS.step(actionLAS)
-            print("LAS Step: {}, reward: {}".format(i, reward_for_LAS))
+#            time.sleep(0.01)
+            
             
             # reset all visitors out of the range of LAS
             move = 1
