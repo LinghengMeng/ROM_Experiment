@@ -16,8 +16,7 @@ My own part of ROM experiment
 
 ## Run Python Script
 
-  1. Command
-     `python Interaction_LASAgent_and_Visitor_and_Env.py`
+  1. Command: `python Interaction_LASAgent_and_Visitor_and_Env.py`
   
   2. Annoconda Spyder: run script `Interaction_LASAgent_and_Visitor_and_Env.py`
 
