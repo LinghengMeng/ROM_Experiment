@@ -12,7 +12,7 @@ My own part of ROM experiment
 
 2. Launching V-REP with scene for ROM Exhibit
 
-   `vrep -gREMOTEAPISERVERSERVICE_20008  F:\ROM_Experiment\LAS-Scenes\livingArchitecture_ROM_exhibit.ttt`
+   `vrep -gREMOTEAPISERVERSERVICE_19997  F:\ROM_Experiment\LAS-Scenes\livingArchitecture_ROM_exhibit.ttt`
 
 
 
