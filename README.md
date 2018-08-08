@@ -19,7 +19,7 @@ My own part of ROM experiment
 1. Launching Tensorboard:
    * Mac:
    `tensorboard --logdir=/Users/jack.lingheng.meng/GoogleDrive/Robot_Simulators/V-Rep-Python_Project_ASL/ROM_Experiment_results/LASAgentActorCritic/summary/run1`
-   * Windows:
+   * Windows Conda Prompt:
    `tensorboard --logdir=F:\ROM_Experiment_results/LASAgentActorCritic/summary/run1`
 2. Visualizing in Browser 
 
