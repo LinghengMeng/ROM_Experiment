@@ -4,7 +4,8 @@ My own part of ROM experiment
 
 
 
-## Launching Tensorboard:
-`tensorboard --logdir=/Users/jack.lingheng.meng/GoogleDrive/Robot_Simulators/V-Rep-Python_Project_ASL/ROM_Experiment_results/LASAgentActorCritic/summary/run1`
-## Visualizing in Browser 
-`http://localhost:6006`
+## Visualizing with Tensorboard
+1. Launching Tensorboard:
+...`tensorboard --logdir=/Users/jack.lingheng.meng/GoogleDrive/Robot_Simulators/V-Rep-Python_Project_ASL/ROM_Experiment_results/LASAgentActorCritic/summary/run1`
+2. Visualizing in Browser 
+...`http://localhost:6006`
