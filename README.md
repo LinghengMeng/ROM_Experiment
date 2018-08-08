@@ -14,7 +14,12 @@ My own part of ROM experiment
 
    `vrep -gREMOTEAPISERVERSERVICE_19997  F:\ROM_Experiment\LAS-Scenes\livingArchitecture_ROM_exhibit.ttt`
 
+## Run Python Script
 
+  1. Command
+     `python Interaction_LASAgent_and_Visitor_and_Env.py`
+  
+  2. Annoconda Spyder: run script `Interaction_LASAgent_and_Visitor_and_Env.py`
 
 ## Visualizing with Tensorboard
 1. Launching Tensorboard:
