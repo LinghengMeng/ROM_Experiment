@@ -41,7 +41,7 @@ def get_all_object_name_and_handle(clientID, opMode, vrep):
         if rc==vrep.simx_return_ok:
             print ('Get Prox Sensor Success!!!!!') # display the reply from V-REP (in this case, just a string)
             for i, name in enumerate(proxSensorNames):
-                if "_node#" in name:
+                if "_node" in name:
                     print("Proximity Sensor: {}, and handle: {}".format(name, proxSensorHandles[i]))
                     proxSensorIndex.append(i)
             break
@@ -55,7 +55,7 @@ def get_all_object_name_and_handle(clientID, opMode, vrep):
         if rc==vrep.simx_return_ok:
             print ('Get Lihgt Success!!!!!') # display the reply from V-REP (in this case, just a string)
             for i, name in enumerate(lightNames):
-                if "_node#" in name:
+                if "_node" in name:
                     print("Light: {}, and handle: {}".format(name, lightHandles[i]))
                     lightIndex.append(i)
             break
@@ -69,7 +69,7 @@ def get_all_object_name_and_handle(clientID, opMode, vrep):
         if rc==vrep.simx_return_ok:
             print ('Get Joint Success!!!!!') # display the reply from V-REP (in this case, just a string)
             for i, name in enumerate(jointNames):
-                if "_node#" in name:
+                if "_node" in name:
                     print("Joint: {}, and handle: {}".format(name, jointHandles[i]))
                     jointIndex.append(i)
             break
@@ -84,7 +84,7 @@ def get_all_object_name_and_handle(clientID, opMode, vrep):
         if rc==vrep.simx_return_ok:
             print ('Get Visitor Target Objest Success!!!!!') # display the reply from V-REP (in this case, just a string)
             for i, name in enumerate(visitorNames):
-                if "Visitor#" in name:
+                if "Visitor" in name:
                     print("Visitor Target: {}, and handle: {}".format(name, visitorHandles[i]))
                     visitorIndex.append(i)
             break
